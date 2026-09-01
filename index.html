@@ -6,7 +6,23 @@
 <title>MONOFUEGO</title>
 <meta name="description" content="MONOFUEGO — domo y estudios en Guanacaste, Costa Rica. Muy pronto.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+<link rel="preload" href="fonts/GrenettePro-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/GrenettePro-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <style>
+  @font-face{
+    font-family:"Grenette Pro";
+    src:url("fonts/GrenettePro-Regular.ttf") format("truetype");
+    font-weight:400;
+    font-style:normal;
+    font-display:swap;
+  }
+  @font-face{
+    font-family:"Grenette Pro";
+    src:url("fonts/GrenettePro-SemiBold.ttf") format("truetype");
+    font-weight:600;
+    font-style:normal;
+    font-display:swap;
+  }
   *{margin:0;padding:0;box-sizing:border-box}
   html,body{height:100%}
   body{
@@ -17,18 +33,19 @@
     align-items:center;
     justify-content:center;
     gap:18px;
-    font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-family:"Grenette Pro",Georgia,"Times New Roman",serif;
     text-align:center;
     padding:24px;
   }
   h1{
     font-size:clamp(2.2rem,9vw,5rem);
-    font-weight:700;
+    font-weight:600; /* Grenette Pro SemiBold */
     letter-spacing:.28em;
     margin-right:-.28em; /* compensa el tracking para centrar de verdad */
     animation:aparecer 1.6s ease both;
   }
   p{
+    font-weight:400; /* Grenette Pro Regular */
     font-size:clamp(.8rem,2.4vw,1rem);
     letter-spacing:.45em;
     margin-right:-.45em;
